@@ -1,0 +1,19 @@
+<h4>Task 3 : Implement Click Event & send Data to component file</h4>
+<p>event-binding works!</p>
+
+<input #input type="text" placeholder="Enter the Name"> <br><br>
+<button (click)="onSend(input)" >Send</button> <br><br>
+
+<input type="text" placeholder="Enter the City"><br><br>
+<button value="Doller event occur.."(click)="onSend1($event)" >Send</button> <br><br>
+<hr>
+
+<h4>Task 4 : Write a program for Prime Number, to take dynamic data from end user & find out whether number is  prime or not prime number & display the result on View file.</h4>
+<input #num type="text" placeholder="Enter the number"> <br><br>
+<button (click)= "isPrimeNumber(num.value)">Check Prime</button><br><br>
+
+Result: <input [value]="result" type="text" placeholder="Result">
+<hr>
+
+
+  
