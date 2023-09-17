@@ -1,0 +1,22 @@
+<div>
+    <h2>Login</h2>
+    <form (ngSubmit)="onSubmit(loginForm)" #loginForm="ngForm">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" [(ngModel)]="model.username" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          type="text"
+          id="password"
+          name="password"
+          [(ngModel)]="model.password"
+          [class.number-input]="isNumeric(model.password)"
+          required
+        />
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+  

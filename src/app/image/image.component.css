@@ -1,0 +1,18 @@
+/* Styles for the image container */
+.image-container {
+    position: relative; /* Needed for absolute positioning */
+    width: 200px; /* Adjust the container's width */
+  }
+  
+  /* Styles for the image */
+  .image {
+    width: 100%; /* Make the image fit the container */
+    height: auto; /* Maintain aspect ratio */
+    transition: opacity 0.3s; /* Add a smooth transition effect */
+  }
+  
+  /* Change the image opacity on hover */
+  .image-container:hover .image {
+    opacity: 0.7; /* Change the opacity on hover */
+  }
+  
